@@ -14,5 +14,8 @@
         <TextBox Name="tbHeight" Height="36" Width="150" Canvas.Left="141" Canvas.Top="182" />
         <Label Content="Рост в см."  Height="36" Width="90" Canvas.Top="182" RenderTransformOrigin="0.195,0.526" Canvas.Left="46"/>
 
+        <Button x:Name="btnCalc" Height="43" Width="170" Background="Green" Foreground="White" Content="Расчет ИМТ" Canvas.Left="90" Canvas.Top="264"/>
+
+        <Label Name="lblIMT"  Foreground="Orange"  FontSize="25" Content="0.00" Canvas.Left="141" Canvas.Top="330"/>
     </Canvas>
 </Window>
