@@ -52,7 +52,44 @@ namespace IdealMassCalculate
 
         private void btnCalc_Click(object sender, RoutedEventArgs e)
         {
+            double hg = 0.0;
+            try
+            {
+                // Переменная для хранения роста
+                // Ковертируем текст в double
+                 hg = Convert.ToDouble(tbHeight.Text);
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show($"Произошла ошибка, обратитесь к администратору: {error.Message}"); 
+            }
 
+
+            // Реализация выбора метода
+            switch (cbMethod.Text)
+            {
+                case "Devine":
+
+                    //// 1 вариант
+                    //string text = DevineMethod(hg, cbGender.Text).ToString();
+                    //lblIMT.Content = text;
+
+                    // 2 вариант
+                    lblIMT.Content = $"Ваш ИМТ: {DevineMethod(hg, cbGender.Text)}";
+                    
+                    break;
+
+                case "Robinson":
+
+
+
+                    // здесь реализация второго метода
+                    break;
+
+                default:
+                    MessageBox.Show("Выберите метод");
+                    break;
+            }
         }
     }
 }

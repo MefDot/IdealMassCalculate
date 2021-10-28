@@ -22,6 +22,6 @@
 
         <Button x:Name="btnCalc" Height="43" Width="170" Background="Green" Foreground="White" Content="Расчет ИМТ" Canvas.Left="90" Canvas.Top="264" Click="btnCalc_Click"/>
 
-        <Label Name="lblIMT"  Foreground="Orange"  FontSize="25" Content="0.00" Canvas.Left="141" Canvas.Top="330"/>
+        <Label Name="lblIMT"  Foreground="Orange"  FontSize="25" Content="0.00" Canvas.Left="61" Canvas.Top="332" RenderTransformOrigin="-0.525,0.509"/>
     </Canvas>
 </Window>
