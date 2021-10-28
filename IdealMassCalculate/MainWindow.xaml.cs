@@ -24,5 +24,35 @@ namespace IdealMassCalculate
         {
             InitializeComponent();
         }
+
+
+        double DevineMethod(double height, string gender)
+        {
+            double answer = 0.0;
+
+            switch (gender)
+            {
+                case "Мужской":
+                    answer = 50 + 2.3 * (0.394 * height - 60);
+                    break;
+
+                case "Женский":
+                    answer = 45.5 + 2.3 * (0.394 * height - 60);
+                    break;
+
+                default:
+                    MessageBox.Show("Укажите пол");
+                    break;
+            }
+
+
+            return answer;
+
+        }
+
+        private void btnCalc_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
